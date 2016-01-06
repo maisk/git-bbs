@@ -2,7 +2,7 @@
 
 . ./bbs.conf.sh
 
-if [ "x${FULL_HOSTNAME}" == x ]; then
+if [ "x${FULL_HOSTNAME}" == "x" ]; then
 	FULL_HOSTNAME=`hostname --fqdn`;
 fi
 
