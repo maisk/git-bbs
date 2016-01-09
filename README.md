@@ -12,3 +12,5 @@ the git-bss mast be used only from trusted users
 
 
 ![alt text](https://raw.githubusercontent.com/maisk/git-bbs/master/doc/git-bbs.png "screenshot")
+
+![alt text](https://raw.githubusercontent.com/maisk/git-bbs/master/doc/git-bbs-2.png "screenshot2")
