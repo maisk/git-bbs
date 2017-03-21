@@ -4,7 +4,7 @@
 #tmp="/tmp/bbstmp-$$";
 #BBS_TITLE="git bbs";
 
-. ./bbs.conf.sh
+source ./bbs.conf
 
 COLOR_RED="\e[31m";
 COLOR_GREEN="\e[32m";

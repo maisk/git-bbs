@@ -17,7 +17,7 @@ if [[ "$1" !=  repos/* ]]; then
 	exit 3;
 fi
 
-. ./bbs.conf.sh
+source ./bbs.conf
 
 if [ "x${FULL_HOSTNAME}" == "x" ]; then
 	FULL_HOSTNAME=`hostname --fqdn`;

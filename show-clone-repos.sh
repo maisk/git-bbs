@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ./bbs.conf.sh
+source ./bbs.conf
 
 if [ "x${GIT_HOME}" == "x" ];then
 	GIT_HOME=${PWD}
