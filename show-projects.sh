@@ -1,2 +1,7 @@
 #!/bin/bash
-find -name *.git |sed "s/\.\///"
+
+if [ "x${GIT_HOME}" == "x" ];then
+	GIT_HOME=${PWD}
+fi
+
+find ${GIT_HOME} -name *.git |sed "s/\.\///"

@@ -23,7 +23,9 @@ if [ "x${FULL_HOSTNAME}" == "x" ]; then
 	FULL_HOSTNAME=`hostname --fqdn`;
 fi
 
-GIT_HOME=${PWD}
+if [ "x${GIT_HOME}" == "x" ];then
+	GIT_HOME=${PWD}
+fi
 
 function print_info {
 
