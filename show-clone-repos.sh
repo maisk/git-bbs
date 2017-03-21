@@ -2,9 +2,6 @@
 
 source ./bbs.conf
 
-if [ "x${GIT_HOME}" == "x" ];then
-	GIT_HOME=${PWD}
-fi
 
 if [ "x${FULL_HOSTNAME}" == "x" ]; then
 	FULL_HOSTNAME=`hostname --fqdn`;

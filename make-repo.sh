@@ -18,13 +18,10 @@ if [ "x${FULL_HOSTNAME}" == "x" ]; then
 	FULL_HOSTNAME=`hostname --fqdn`;
 fi
 
-if [ "x${GIT_HOME}" == "x" ];then
-	GIT_HOME=${PWD}
-fi
 
 function print_info {
 
-	REPO_PATH=${GIT_HOME}/$1
+	REPO_PATH=$1
 	REPO_URL="ssh://git@${FULL_HOSTNAME}://${REPO_PATH}"
 
 	echo " "
@@ -54,9 +51,10 @@ if [ -e $1 ]; then
 	exit 2;
 fi
 
-mkdir -p $1
-cd $1
+mkdir -p ${GIT_HOME}/$1
+REPO=`readlink -f ${GIT_HOME}/$1`
+cd $REPO
 git init --bare
 git update-server-info
 
-print_info $1
+print_info $REPO

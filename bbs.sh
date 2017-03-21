@@ -55,7 +55,8 @@ bbs_create_project(){
 	echo "create repo wizard";
 	echo "give the repository_path,  example path:  project.git"
 	echo ""
-	read -p "path: " -e -i $NEW_REPO_PATH NEW_REPO_PATH
+	#read -p "path: " -e -i $NEW_REPO_PATH NEW_REPO_PATH
+	read -p "path: " -e  NEW_REPO_PATH
 	echo "-----------------------------------------";
 	echo "REPO_PATH  : $NEW_REPO_PATH"
 	echo "-----------------------------------------";
