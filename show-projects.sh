@@ -6,4 +6,7 @@ if [ "x${GIT_HOME}" == "x" ];then
 	GIT_HOME=${PWD}
 fi
 
-find ${GIT_HOME} -name *.git |sed "s/\.\///"
+(
+cd ${GIT_HOME}
+find  -name *.git |sed "s/\.\///"
+)

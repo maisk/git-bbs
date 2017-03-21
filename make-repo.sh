@@ -2,18 +2,13 @@
 if [ $# -eq 0 ]; then
  echo "Usage: $0 repository_path";
  echo " "
- echo "example repository_path:  repos/project.git"
+ echo "example repository_path:  project.git"
  exit 1;
 fi
 
 
-
 if [[ "$1" != *.git ]]; then
 	echo "ERROR repository_path must ends with .git"
-	exit 3;
-fi
-if [[ "$1" !=  repos/* ]]; then
-	echo "ERROR repository_path must start with repos/"
 	exit 3;
 fi
 
