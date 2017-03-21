@@ -49,11 +49,11 @@ bbs_show_projects(){
 }
 
 bbs_create_project(){
-	NEW_REPO_PATH='repos/';
+	NEW_REPO_PATH='';
 	FIN_FLAG="0";
 	while [ $FIN_FLAG = "0" ] ; do
 	echo "create repo wizard";
-	echo "give the repository_path,  example path:  repos/project.git"
+	echo "give the repository_path,  example path:  project.git"
 	echo ""
 	read -p "path: " -e -i $NEW_REPO_PATH NEW_REPO_PATH
 	echo "-----------------------------------------";
